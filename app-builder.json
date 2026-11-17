@@ -1,0 +1,39 @@
+{
+  "package_name": "pocket-sattrack",
+  "version": "1.0.3",
+  "app_name": "Sat Tracker",
+  "bin_name": "pocket-sattrack",
+  "description": "ISS and satellite pass predictor with sky chart and naked-eye visibility (GPS optional, Cap LoRa-1262)",
+  "store": {
+    "summary": "When the ISS and satellites fly over, where to look, and if you can see them",
+    "description": "Sat Tracker predicts satellite passes over your location for the next 24 hours: when each one rises, how high it gets, which direction it travels, and whether you can see it with your own eyes (a star marks passes where the satellite is sunlit while your sky is dark). Open a pass to see its path on a sky chart, a countdown, rise/peak/set times with compass directions, and its live position while it is overhead. The Sky page shows every tracked satellite above the horizon right now.\n\nGroups: space stations (ISS, Tiangong), the brightest satellites, amateur radio satellites and weather satellites. Orbit data comes from CelesTrak over Wi-Fi (cached, refreshed at most every 2 hours); the SGP4 orbit model is built in. Your location comes from the Cap LoRa-1262's GPS, or type it in; it is only stored on the device.\n\nKeys: F / X move, Z / C change pages, Enter opens a pass, V shows naked-eye passes only, U updates orbit data, L types your location.",
+    "categories": [
+      "Education",
+      "Radio & Comms"
+    ],
+    "screenshots": [
+      "screenshots/page1.png",
+      "screenshots/page2.png",
+      "screenshots/page3.png",
+      "screenshots/page4.png"
+    ],
+    "icon": "packaging/store_icon.png",
+    "license": "MIT",
+    "source_repo": "https://github.com/duanesweazy1/pocket-sattrack",
+    "author": {
+      "github": "duanesweazy1",
+      "display_name": "Duane Sweazy"
+    },
+    "share_code": "SATS",
+    "permissions": {
+      "camera": false,
+      "microphone": false,
+      "imu": false,
+      "network": true,
+      "additional_hardware": true,
+      "background_service": false,
+      "external_display": false
+    },
+    "locales": {}
+  }
+}
