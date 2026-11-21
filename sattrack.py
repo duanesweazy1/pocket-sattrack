@@ -72,10 +72,14 @@ KEY_S, KEY_F, KEY_L, KEY_SEMICOLON = 31, 33, 38, 39
 KEY_Z, KEY_X, KEY_C, KEY_V, KEY_N = 44, 45, 46, 47, 49
 KEY_COMMA, KEY_DOT, KEY_SLASH, KEY_SPACE = 51, 52, 53, 57
 KEY_UP, KEY_LEFT, KEY_RIGHT, KEY_DOWN = 103, 105, 106, 108
+# Cardputer Zero symbol layer: sym+B sends KEY_HIRAGANA (91), sym+H sends
+# KEY_KPDOT (83) and sym+R sends KEY_KP7 (71) instead of the PC codes.
+KEY_KP7, KEY_KPDOT, KEY_HIRAGANA = 71, 83, 91
 NUM_KEYS = {KEY_1: 0, KEY_2: 1, KEY_3: 2, KEY_4: 3}
 DIGITS = {2: "1", 3: "2", 4: "3", 5: "4", 6: "5", 7: "6", 8: "7", 9: "8", 10: "9", 11: "0"}
 TEXT_KEYS = dict(DIGITS)
-TEXT_KEYS.update({KEY_DOT: ".", KEY_COMMA: ",", KEY_MINUS: "-", KEY_SPACE: " ",
+TEXT_KEYS.update({KEY_DOT: ".", KEY_KPDOT: ".", KEY_HIRAGANA: ".",
+                  KEY_COMMA: ",", KEY_MINUS: "-", KEY_KP7: "-", KEY_SPACE: " ",
                   KEY_N: "N", KEY_S: "S", KEY_E: "E", KEY_W: "W"})
 
 PAGES = ["Passes", "Pass", "Sky", "Setup"]
